@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@500&family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
-
-body {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   background-color: #fff291;
+  overflow-x: hidden;
 
 }
 
@@ -17,6 +20,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: sticky;
   top: 0;
+  width: 100vw;
 }
 
 header h1 {
@@ -56,7 +60,7 @@ main {
 }
 
 section {
-  width: 48%;
+  width: 50%;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -69,7 +73,7 @@ section {
   border-bottom: 2px solid black;
   padding-bottom: 5px;
   width: 50%;
-  margin: auto;
+  margin:  2px auto;
 }
 
 ::-webkit-scrollbar {
@@ -138,11 +142,17 @@ li {
   header h1 {
     margin: 10px 0;
   }
+  .main-title{
+    font-size: 30px;
+  }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 394px) {
   #searchInput {
-    width: 60%;
+    width: 70%;
+  }
+  .main-title{
+    font-size: 20px;
   }
 }
 
